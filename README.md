@@ -52,18 +52,18 @@ This project provides hands-on experience with concurrency, synchronization, and
 ### 1. CPU-Based MPI Message Matching
 - Sequential scanning of Posted Receive Queue (PRQ) and Unexpected Message Queue (UMQ).  
 - Handles messages sequentially; simple and deterministic.  
-- Code file: [`CPU_Based_Matching`](./CPU_Based_Matching)
+- Code file: [`CPU_Based_Matching`](./CPU_Based_Matching.c)
 
 ### 2. Optimistic Tag Matching
 - Multi-threaded matching using hash tables and fine-grained locks.  
 - Concurrent processing of events with conflict resolution.  
-- Code file: [`Optimistic_Tag_Matching`](./Optimistic_Tag_Matching)
+- Code file: [`Optimistic_Tag_Matching`](./Optimistic_Tag_Matching.c)
 
 ### 3. Radix Trie–Based Matching
 - Uses Patricia (radix) tries for key-based lookups.  
 - Reduces search complexity from linear to logarithmic.  
 - Handles wildcard receives via separate tries/lists.  
-- Code file: [`MPI_Radix_Trees`](./MPI_Radix_Trees)
+- Code file: [`MPI_Radix_Trees`](./MPI_Radix_Trees.c)
 
 ---
 
